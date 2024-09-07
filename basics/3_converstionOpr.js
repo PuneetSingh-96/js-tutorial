@@ -38,7 +38,7 @@ let strNumber = String(number)
 console.log(strNumber)
 console.log(typeof (strNumber))
 
-===================///////////////===================//
+//===================///////////////===================//
 
 operations
 
