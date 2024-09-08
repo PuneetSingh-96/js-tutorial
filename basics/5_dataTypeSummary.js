@@ -48,12 +48,12 @@ const newObject = {
 
 //Function
 
-const myFunction = function(){
-    console.log("my function")
+// const myFunction = function(){
+//     console.log("my function")
 
-}
-console.log(myFunction())
-console.log(typeof (myFunction))
+// }
+// console.log(myFunction())
+// console.log(typeof (myFunction))
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
