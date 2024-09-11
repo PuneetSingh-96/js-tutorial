@@ -1,7 +1,5 @@
 //OBJECT
 
-//singleton
-
 //object literals
 
 const mySymbol = Symbol("my symbol")
