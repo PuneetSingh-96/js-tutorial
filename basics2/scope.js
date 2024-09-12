@@ -1,9 +1,9 @@
 //scope {}
 
-let a;
+let a;  //global var
 if (true){
     a = 20
-    const b = 30
+    const b = 30 //local var
     var c = 50
 }
 //console.log(a);
