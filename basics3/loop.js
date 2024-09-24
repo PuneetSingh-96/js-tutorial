@@ -129,7 +129,7 @@ for(const key in map ){
 
 //=============================//===========================//
 
-//for each loop
+//foreach() loop
 
 // array.forEach((element,index,array) => {
     
@@ -167,6 +167,77 @@ const mycoding = [
 ]
 
 mycoding.forEach((item)=>{
-    console.log(item.langName);
-    console.log(item.langfile);
+    //console.log(item.langName);
+    //console.log(item.langfile);
 })
+
+//========================//============================//
+
+//filter()
+
+const mynums = [1,2,3,4,5,6,7,8]
+const newnums = mynums.filter((num)=> num > 4)
+    //console.log(newnums)
+
+//note : use return function in {}   
+
+const evenNum = mynums.filter((num)=> {
+    if (num%2==0){
+       return num
+    }
+})
+//console.log(evenNum);
+
+//============================//=================================//
+
+//map()
+
+const numbers = [0,1,2,3,4,5,6,7,8,9]
+const newNUmbers = numbers.map((num )=> num + 10)
+//console.log(newNUmbers)
+
+
+const value = [0,1,2,3,4,5,6,7,8,9]
+
+const new_val = value
+               .map((val)=> val*10)
+               .map((updated_newval)=> updated_newval+ 1)
+               .filter((num)=> num > 50 )
+//console.log(new_val)
+
+//===============================//==================================//
+
+//reduce()
+
+const array = [0,1,2,3,4,5]
+
+const newArray = array.reduce( function (accumaulator,currentValue) {
+    //console.log("acc :"+accumaulator + " curr :"+currentValue)
+    return accumaulator + currentValue
+}, 0)
+//console.log(newArray)
+
+const updarray = array.reduce((acc,curr)=> acc + curr , 0)
+console.log(updarray)
+
+const shoppingcart = [
+    {
+        item_name: "js course",
+        price : 499
+    },
+    {
+        item_name: "python course",
+        price : 299
+    },
+    {
+        item_name: "java course",
+        price : 899
+    },
+    {
+        item_name: "c++ course",
+        price : 399
+    }
+]
+
+const cartprice = shoppingcart.reduce((acc,item) => (acc + item.price),0)
+console.log(cartprice)
