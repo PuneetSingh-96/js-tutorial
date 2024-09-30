@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style = " background-color: darkgray; color:#fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlan (langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector(`.language`).appendChild(li)
+    }
+        addlang("python")
+        addlang("c++")
+     
+    function addOptimizelang (langName){
+        const li = document.querySelector('li')
+        li.appendChild(document.createElement(langname))
+        document.querySelector('.language').append(li)
+    }   
+    addOptimizelang("java")
+
+    //editing list
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML('li')
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replace(newli)
+
+    const firstlang = document.querySelector("li:firstChild")
+    firstLang.outerHTML = '<li>tpescript<.li'
+
+    // remove   
+
+    const lastlang = document.querySelector('li:lastChild') 
+    lastLang.reove()
+
+
+</script>
+</html>
